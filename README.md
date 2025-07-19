@@ -1,5 +1,5 @@
 
-![Menu](https://github.com/Erfan-XRay/HPulse/blob/main/menu.png)
+![Menu](https://github.com/Erfan-XRay/WGDashboardEasyInstaller/blob/main/wg.png)
 
 ## What is WGDashboardEasyInstaller?
 an easy way to install [WGDashboard by Donald Zou](https://github.com/donaldzou/WGDashboard)
