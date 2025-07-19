@@ -1,0 +1,2 @@
+# WGDashboardEasyInstaller
+WGDashboard Easy Installer
