@@ -294,10 +294,13 @@ EOF
     sudo systemctl enable wg-dashboard.service
     sudo systemctl start wg-dashboard.service
 
+    # Get the server's IPv4 address
+    SERVER_IP=$(hostname -I | awk '{print $1}')
+
     if sudo systemctl is-active --quiet wg-dashboard.service; then
         echo -e "${GREEN}WGDashboard has been successfully installed and its service is active.${NC}"
         echo -e "${GREEN}You can connect to WGDashboard with the following details:${NC}"
-        echo -e "${GREEN}  IPv4 Server: ${NC}${WHITE}YOUR_SERVER_IP:10086${NC}" # Placeholder for actual IP
+        echo -e "${GREEN}  IPv4 Server: ${NC}${CYAN}${SERVER_IP}:10086${NC}" # Display actual IP with CYAN color
         echo -e "${GREEN}  Username : ${NC}${WHITE}admin${NC}"
         echo -e "${GREEN}  Password : ${NC}${WHITE}admin${NC}"
         echo -e "${GREEN}You can check the service status with 'sudo systemctl status wg-dashboard.service'.${NC}"
